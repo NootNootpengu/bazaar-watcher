@@ -12,6 +12,7 @@ to download all needed requirements, just run `pip install folder/requirements.t
 # How to use
 
 to use the program:
+
 1- first, go to `setting.json` and fill the `API_key` with your torn API_key. 
 
 2- second, write the items you would like to watch just like the default `beer` in `setting.json`
