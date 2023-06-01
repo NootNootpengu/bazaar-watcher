@@ -16,6 +16,8 @@ init(autoreset=True)
     It will keep trying to get data until it gets it.
 """
 
+print("loading...")
+
 
 def get_request(url):
     while True:
@@ -88,7 +90,6 @@ for watched in watch:
         if watched.get("name") == items.get(item).get("name"):
             watched["id"] = item
             if watched["alert_bellow"] <= 1: watched["alert_bellow"] *= items.get(item).get("market_value")
-
 
 scan_bazaar(watch)
 schedule.every(31).seconds.do(scan_bazaar, watch=watch)
